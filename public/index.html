@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ecommerce App</title>
+   
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    input, button {
+      margin: 0.3rem 0;
+      padding: 0.5rem;
+      
+      
+    }
+   
+    .product {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+    }
+  </style>
+   
+</head>
+<body>
+  <h1>Product Manager</h1>
+
+  <input type="text" id="searchInput" placeholder="Search by name" />
+  <button style="background-color: rgb(140, 140, 184);" onclick="searchProducts()">Search</button>
+
+  <h3>Add New Product</h3>
+  <form id="productForm">
+    <input type="text" id="name" placeholder="Name" required><br>
+    <input type="number" id="price" placeholder="Price" required><br>
+    <input type="text" id="description" placeholder="Description"><br>
+    <input type="text" id="category" placeholder="Category"><br>
+    <button style="background-color: rgb(147, 147, 241);" type="submit">Add Product</button>
+  </form>
+
+  <h3>Product List</h3>
+  <div id="productsContainer"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
